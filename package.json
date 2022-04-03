@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "Portfolio for Simon Dunkelman",
   "scripts": {
-    "build": "npm-run-all build:*",
-    "watch": "watch 'npm run build:css' ./public",
-    "build:css": "postcss src/styles/tailwind.css -o public/styles/tailwind.css && cp src/styles/global.css public/styles/"
+    "build": "postcss src/styles/tailwind.css -o dist/styles/tailwind.css && cp src/styles/global.css dist/styles/",
+    "watch": "watch 'npm run build' dist"
   },
   "Keywords": [],
   "author": "Simon Dunkelman @flatpackfintech",
